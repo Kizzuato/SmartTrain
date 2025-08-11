@@ -28,7 +28,9 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
+      {/* ! ganti About jadi live camera */}
       <About data={landingPageData.About} />
+      {/* ! ganti About jadi live camera */}
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />

@@ -1,4 +1,5 @@
 import React from "react";
+import LiveCamPreview from "./LiveCamPreview";
 
 export const About = (props) => {
   return (
@@ -7,13 +8,18 @@ export const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+            <LiveCamPreview
+              wsUrl="http://192.168.1.236:4747/video"
+              autoPlay={true}
+              controls={true}
+            />
+            {/* <img src="img/about.jpg" className="img-responsive" alt="" />{" "} */}
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>About Us</h2>
+              <h2>Live Camera</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Why Choose Us?</h3>
+              {/* <h3>Why Choose Us?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
@@ -33,7 +39,7 @@ export const About = (props) => {
                       : "loading"}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

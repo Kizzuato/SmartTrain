@@ -5,18 +5,18 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
-          <button
+          {/* <button
             type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
+            {" "}tes
             <span className="sr-only">Toggle navigation</span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
-          </button>
+          </button> */}
           <a
             className="text-3xl font-bold navbar-brand page-scroll flex"
             href="#page-top"
@@ -59,7 +59,8 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#" className=" !bg-[#EB2525] !text-white !px-4  uppercase">
+              {/* tambahin link nya */}
+              <a href="" className=" !bg-[#EB2525] !text-white !px-4  uppercase">
                 Admin Page
               </a>
             </li>
