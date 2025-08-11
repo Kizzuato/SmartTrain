@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
@@ -85,9 +86,9 @@ export default function SignUp() {
 
           <p className="text-center text-sm text-gray-600">
             Have an account?{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <Link to="/login" className="text-blue-600 hover:underline">
               Sign In
-            </a>
+            </Link>
           </p>
         </form>
       </div>

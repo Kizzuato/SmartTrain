@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -69,9 +70,9 @@ export default function Login() {
 
           <p className="text-center text-sm text-gray-600">
             Don’t have an account?{' '}
-            <a href="#" className="text-blue-600 hover:underline">
+            <Link to="/signup" className="text-blue-600 hover:underline">
               Sign Up
-            </a>
+            </Link>
           </p>
         </form>
       </div>
