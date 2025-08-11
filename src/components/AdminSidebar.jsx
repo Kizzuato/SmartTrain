@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
-// import Fontaw 
+import { NavLink, Link } from "react-router-dom";
+// import Fontaw
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Dashboard", path: "/admin" },
+    { name: "Dashboard", path: "/admin", icon: "fa fa-area-chart" },
     // { name: "Users", href: "#" },
     // { name: "Settings", href: "#" },
   ];
@@ -27,33 +27,43 @@ export default function Sidebar() {
       <aside
         className={`fixed top-0 left-0 h-full bg-white shadow-lg p-4 transform 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-        md:translate-x-0 transition-transform duration-200 w-72 z-50 px-4 pt-10 `}
+        md:translate-x-0 transition-transform duration-200 w-72 z-50 px-4 pt-10 flex flex-col justify-between `}
       >
-        <div className="h-12 m-2 mb-10">
-          <i className="fas fa-chart-line"></i>
-          <img
-            src="img/admin-logo.svg" // ganti dengan path gambar kamu
-            alt="Login Illustration"
-            className="w-full"
-          />
+        <div>
+          <div className="h-12 m-2 mb-10">
+            <i className="fas fa-chart-line"></i>
+            <img
+              src="img/admin-logo.svg" // ganti dengan path gambar kamu
+              alt="Login Illustration"
+              className="w-full"
+            />
+          </div>
+          <nav className="space-y-3">
+            {menuItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  `font-semibold flex items-center gap-3 p-3 rounded-xl transition ${
+                    isActive
+                      ? "bg-[#EB2525] bg-opacity-10 text-[#EB2525]"
+                      : "text-gray-700 hover:bg-gray-100"
+                  }`
+                }
+              >
+                <i className={item.icon}></i>
+                {item.name}
+              </NavLink>
+            ))}
+          </nav>
         </div>
-        <nav className="space-y-3">
-          {menuItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              className={({ isActive }) =>
-                `font-semibold flex items-center gap-3 p-3 rounded-md transition ${
-                  isActive
-                    ? "bg-[#EB2525] bg-opacity-10 text-[#EB2525]"
-                    : "text-gray-700 hover:bg-gray-100"
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
-          ))}
-        </nav>
+        <div className="flex flex-col gap-4">
+          <hr class="h-1 w-full bg-gray-200" />
+          <Link to="/" className="ml-2 flex items-center justify-between px-6">
+            Log Out
+            <i className="fa fa-sign-out"></i>
+          </Link>
+        </div>
       </aside>
 
       {/* Overlay for Mobile */}

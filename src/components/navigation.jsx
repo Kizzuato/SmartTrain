@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
+    <nav id="menu" className="navbar-default navbar-fixed-top">
+      <div className="">
         <div className="navbar-header">
           <a
             className="text-3xl font-bold navbar-brand page-scroll flex"
