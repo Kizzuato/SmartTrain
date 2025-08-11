@@ -2,8 +2,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./views/LandingPage.jsx";
-import SignIn from "./views/Sign-in.jsx";
-import SignUpPage from "./views/LandingPage";
+import Login from "./views/Login.jsx";
+import SignUp from "./views/SignUp.jsx";
 import AdminPage from "./views/LandingPage";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<SignIn />} />
-        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </Router>
