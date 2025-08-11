@@ -60,7 +60,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               {/* tambahin link nya */}
-              <a href="" className=" !bg-[#EB2525] !text-white !px-4  uppercase">
+              <a href="/sign-in" className=" !bg-[#EB2525] !text-white !px-4  uppercase">
                 Admin Page
               </a>
             </li>
