@@ -17,24 +17,25 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
-          </a>{" "}
+          <a
+            className="text-3xl font-bold navbar-brand page-scroll flex"
+            href="#page-top"
+          >
+            SMART-
+            <div className=" text-[#EB2525]">TRAIN</div>
+          </a>
         </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
+        <div className="" id="bs-example-navbar-collapse-1">
+          <ul className="nav navbar-nav navbar-right flex items-center text-center">
             <li>
               <a href="#features" className="page-scroll">
                 Features
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About
+              <a href="#live-camera" className="page-scroll">
+                Live Camera
               </a>
             </li>
             <li>
@@ -48,11 +49,6 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
-            <li>
               <a href="#team" className="page-scroll">
                 Team
               </a>
@@ -60,6 +56,11 @@ export const Navigation = (props) => {
             <li>
               <a href="#contact" className="page-scroll">
                 Contact
+              </a>
+            </li>
+            <li>
+              <a href="#" className=" !bg-[#EB2525] !text-white !px-4  uppercase">
+                Admin Page
               </a>
             </li>
           </ul>
