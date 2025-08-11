@@ -208,8 +208,9 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background: url(../img/intro-bg.png) center center no-repeat;
+  background-color: rgba(0, 0, 0, 0.2); /* Black with 70% opacity */
+  background-blend-mode: darken;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

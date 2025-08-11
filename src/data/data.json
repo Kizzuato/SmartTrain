@@ -1,7 +1,7 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Smart-train simulator",
+    "paragraph": "Dengan memanfaatkan IoT dan computer vision, sistem dapat mendeteksi secara otomatis jika ada kendaraan atau manusia yang masih berada di lintasan saat kereta mendekat. Informasi ini kemudian dikirim sebagai peringatan ke masinis, sehingga kereta dapat melambat atau berhenti lebih awal untuk mencegah kecelakaan."
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
