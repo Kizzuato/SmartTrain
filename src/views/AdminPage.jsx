@@ -21,7 +21,7 @@ export default function AdminDashboard() {
             <h3 className="mb-2 font-semibold">Live Camera From Train</h3>
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
               <LiveCamPreview
-                wsUrl="http://192.168.1.236:4747/video"
+                wsUrl="http://192.168.18.16:4747/video"
                 autoPlay={true}
                 controls={true}
               />
@@ -35,7 +35,7 @@ export default function AdminDashboard() {
             </h3>
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
               <LiveCamPreview
-                wsUrl="http://192.168.1.236:4747/video"
+                wsUrl="http://192.168.18.16:4747/video"
                 autoPlay={true}
                 controls={true}
               />

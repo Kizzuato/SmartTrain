@@ -9,7 +9,7 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             {" "}
             <LiveCamPreview
-              wsUrl="http://192.168.1.236:4747/video"
+              wsUrl="http://192.168.18.16:4747/video"
               autoPlay={true}
               controls={true}
             />
