@@ -161,24 +161,29 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-camera",
+      "title": "Entity & Object Detection",
+      "text": "Kamera mendeteksi entitas atau objek seperti manusia atau kendaraan."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-laptop",
+      "title": "Website live view camera",
+      "text": "Website terjaga yang dapat dibuka untuk melihat sekitar dari kamera di mana saja secara real-time."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wifi",
+      "title": "Signal Communication Transferring",
+      "text": "Kamera akan memberikan sinyal komunikasi yang dapat memberikan peringatan ke kereta apabila ada bahaya, terutama di persimpangan."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-bolt",
+      "title": "Rechargeable and Eco-Friendly Power Savings",
+      "text": "Daya kamera bisa diisi secara berkala dan penerapan panel surya dapat mempertahankan kinerja kamera setiap waktu."
+    },
+    {
+      "icon": "fa fa-exclamation-triangle ",
+      "title": "Automatic Train Protection",
+      "text": "Menerapkan sistem keselamatan otomatis pada kereta api yang dirancang untuk mencegah kecelakaan akibat human-error seperti meleibihi batas kecepatan."
     }
   ]
 }
