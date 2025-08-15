@@ -2,32 +2,39 @@ import React from "react";
 
 export const Services = (props) => {
   return (
-    <div id="services" className="text-center">
-      <div className="container">
-        <div className="section-title">
-          <h2 className="font-bold">Gallery</h2>
-          <p>
+    <div id="services" className="text-center py-8">
+      <div className="container mx-auto px-4">
+        <div className="section-title mb-8">
+          <h2 className="font-bold text-2xl mb-2">Gallery</h2>
+          <p className="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
           </p>
         </div>
-        <div className="w-100% h-[798px] p-8 bg-gradient-to-r from-red-600 to-red-800 inline-flex flex-col justify-start items-start gap-8 overflow-hidden">
-          <div className="self-stretch flex-1 inline-flex justify-start items-start gap-8 overflow-hidden">
-            <div className="w-72 self-stretch relative bg-white rounded-[40px]" />
-            <div className="w-96 self-stretch relative bg-white rounded-[40px]" />
-            <div className="w-52 self-stretch relative bg-white rounded-[40px]" />
-            <div className="flex-1 self-stretch relative bg-white rounded-[40px]" />
+
+        {/* Container bento */}
+        <div className="flex flex-col gap-6">
+          {/* Row 1 */}
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="w-72 h-72 bg-white rounded-2xl"></div>
+            <div className="w-96 h-72 bg-white rounded-2xl"></div>
+            <div className="w-52 h-72 bg-white rounded-2xl"></div>
+            <div className="flex-1 min-w-[150px] h-72 bg-white rounded-2xl"></div>
           </div>
-          <div className="self-stretch h-72 inline-flex justify-start items-start gap-8 overflow-hidden">
-            <div className="w-80 self-stretch relative bg-white rounded-[40px]" />
-            <div className="w-[590px] self-stretch relative bg-white rounded-[40px]" />
-            <div className="w-96 self-stretch relative bg-white rounded-[40px]" />
+
+          {/* Row 2 */}
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="w-80 h-72 bg-white rounded-2xl"></div>
+            <div className="w-[590px] h-72 bg-white rounded-2xl max-w-full"></div>
+            <div className="w-96 h-72 bg-white rounded-2xl"></div>
           </div>
-          <div className="self-stretch flex-1 inline-flex justify-start items-start gap-8 overflow-hidden">
-            <div className="w-96 self-stretch relative bg-white rounded-[40px]" />
-            <div className="flex-1 self-stretch relative bg-white rounded-[40px]" />
-            <div className="w-80 self-stretch relative bg-white rounded-[40px]" />
-            <div className="flex-1 self-stretch relative bg-white rounded-[40px]" />
+
+          {/* Row 3 */}
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="w-96 h-72 bg-white rounded-2xl"></div>
+            <div className="flex-1 min-w-[150px] h-72 bg-white rounded-2xl"></div>
+            <div className="w-80 h-72 bg-white rounded-2xl"></div>
+            <div className="flex-1 min-w-[150px] h-72 bg-white rounded-2xl"></div>
           </div>
         </div>
       </div>
