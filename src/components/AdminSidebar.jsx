@@ -1,17 +1,45 @@
 "use client";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NavLink, Link } from "react-router-dom";
-// import Fontaw
+import { NavLink, Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuItems = [
     { name: "Dashboard", path: "/admin", icon: "fa fa-area-chart" },
-    // { name: "Users", href: "#" },
-    // { name: "Settings", href: "#" },
   ];
+
+  const handleLogout = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You will be logged out of your account.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#EB2525",
+      cancelButtonColor: "#6c757d",
+      confirmButtonText: "Yes, Log Out",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Hapus token / data login
+        localStorage.removeItem("token");
+        localStorage.removeItem("user");
+
+        Swal.fire({
+          title: "Logged Out",
+          text: "You have successfully logged out.",
+          icon: "success",
+          timer: 1500,
+          showConfirmButton: false,
+        });
+
+        // Redirect ke halaman login
+        navigate("/");
+      }
+    });
+  };
 
   return (
     <>
@@ -31,10 +59,9 @@ export default function Sidebar() {
       >
         <div>
           <div className="h-12 m-2 mb-10">
-            <i className="fas fa-chart-line"></i>
             <img
-              src="img/admin-logo.svg" // ganti dengan path gambar kamu
-              alt="Login Illustration"
+              src="img/admin-logo.svg"
+              alt="Admin Logo"
               className="w-full"
             />
           </div>
@@ -58,11 +85,14 @@ export default function Sidebar() {
           </nav>
         </div>
         <div className="flex flex-col gap-4">
-          <hr class="h-1 w-full bg-gray-200" />
-          <Link to="/" className="ml-2 flex items-center justify-between px-6">
+          <hr className="h-1 w-full bg-gray-200" />
+          <button
+            onClick={handleLogout}
+            className="ml-2 flex items-center justify-between px-6 text-gray-700 hover:text-red-600"
+          >
             Log Out
             <i className="fa fa-sign-out"></i>
-          </Link>
+          </button>
         </div>
       </aside>
 
