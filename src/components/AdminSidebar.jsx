@@ -96,7 +96,7 @@ export default function Sidebar() {
       {/* Overlay for Mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 z-[9998] md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-30 z-[1059] md:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
