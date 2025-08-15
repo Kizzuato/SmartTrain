@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <header className="bg-white max-h-32 shadow px-10 py-10 flex justify-between items-center top-0 sticky navbar-default navbar-fixed-top">
+    <header className="bg-white max-h-32 shadow px-10 py-10 flex justify-between items-center top-0 sticky navbar-default navbar-fixed-top !z-40">
       <div>
-        <h1 className="font-bold text-black uppercase pt-2">Dashboard</h1>
+        <h1 className="hidden font-bold text-black uppercase pt-2">Dashboard</h1>
       </div>
       <div className="flex justify-end">
         <div className="flex flex-col gap-4">

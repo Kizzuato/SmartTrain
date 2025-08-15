@@ -13,6 +13,7 @@ export default function Sidebar() {
   ];
 
   const handleLogout = () => {
+    setIsOpen(false)
     Swal.fire({
       title: "Are you sure?",
       text: "You will be logged out of your account.",
@@ -45,7 +46,7 @@ export default function Sidebar() {
     <>
       {/* Toggle Button - Mobile */}
       <button
-        className="md:hidden p-2 text-gray-600"
+        className="md:hidden p-2 text-gray-600 fixed top-8 left-4 z-[10000]"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -54,16 +55,12 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside
         className={`fixed top-0 left-0 h-full bg-white shadow-lg p-4 transform 
-        ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-        md:translate-x-0 transition-transform duration-200 w-72 z-50 px-4 pt-10 flex flex-col justify-between `}
+      ${isOpen ? "translate-x-0" : "-translate-x-full"} 
+      md:translate-x-0 transition-transform duration-200 w-72 z-[1060] px-4 pt-10 flex flex-col justify-between`}
       >
         <div>
           <div className="h-12 m-2 mb-10">
-            <img
-              src="img/admin-logo.svg"
-              alt="Admin Logo"
-              className="w-full"
-            />
+            <img src="img/admin-logo.svg" alt="Admin Logo" className="w-full" />
           </div>
           <nav className="space-y-3">
             {menuItems.map((item) => (
@@ -99,9 +96,9 @@ export default function Sidebar() {
       {/* Overlay for Mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 z-40 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-30 z-[9998] md:hidden"
           onClick={() => setIsOpen(false)}
-        ></div>
+        />
       )}
     </>
   );
