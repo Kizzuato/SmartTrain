@@ -131,27 +131,27 @@
   ],
   "Team": [
     {
-      "img": "",
+      "img": "img/team/eka.png",
       "name": "Eka Fajar R",
-      "job": "Director"
+      "job": "Material"
     },
     {
-      "img": "",
+      "img": "img/team/hasbi.png",
       "name": "Muhammad Hasby Ash",
-      "job": "Senior Designer"
+      "job": "AI engginer"
     },
     {
-      "img": "",
+      "img": "img/team/dzakiyya.png",
       "name": "Dzakiyya Puteri Aulia",
-      "job": "Senior Designer"
+      "job": "Website Developer"
     },
     {
-      "img": "",
+      "img": "img/team/",
       "name": "Muhammad Fariz Alfaritzi",
       "job": "Project Manager"
     },
     {
-      "img": "",
+      "img": "img/team/hickam.png",
       "name": "Hickham Amwala K",
       "job": "Project Manager"
     }

@@ -3,7 +3,7 @@ import React from "react";
 export const Services = (props) => {
   return (
     <div id="services" className="text-center py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="section-title mb-8">
           <h2 className="font-bold text-2xl mb-2">Gallery</h2>
           <p className="text-gray-600">

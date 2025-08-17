@@ -30,7 +30,7 @@ export default function LiveCamPreview({
   return (
     <div
       ref={containerRef}
-      className="max-w-4xl mx-auto p-6"
+      className="max-w-4xl mx-auto p-6 w-full"
     >
       <div className="bg-gray-900 rounded-2xl shadow-2xl border-4 border-gray-800 overflow-hidden">
         {/* Video area */}
