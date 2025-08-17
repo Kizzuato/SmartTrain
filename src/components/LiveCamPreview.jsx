@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 export default function LiveCamPreview({
-  url = "http://192.168.18.16:4747/video",
+  url = "http://localhost:5000/stream",
   controls = true,
 }) {
   const [connected, setConnected] = useState(true);

@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Smart-train simulator",
-    "paragraph": "Dengan memanfaatkan IoT dan computer vision, sistem dapat mendeteksi secara otomatis jika ada kendaraan atau manusia yang masih berada di lintasan saat kereta mendekat. Informasi ini kemudian dikirim sebagai peringatan ke masinis, sehingga kereta dapat melambat atau berhenti lebih awal untuk mencegah kecelakaan."
+    "paragraph": "From vision to reality, our cutting-edge Smart Train project is accelerating into the future of intelligent transportation. Designed to revolutionize the way we experience rail travel, this initiative harnesses the power of artificial intelligence and computer vision to enhance safety, efficiency, and sustainability across every level of the rail system. "
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -137,7 +137,7 @@
     },
     {
       "img": "img/team/hasbi.png",
-      "name": "Muhammad Hasby Ash",
+      "name": "Muhammad Hasby A",
       "job": "AI engginer"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "img": "img/team/",
-      "name": "Muhammad Fariz Alfaritzi",
+      "name": "Muhammad Fariz A",
       "job": "Project Manager"
     },
     {
@@ -169,27 +169,27 @@
     {
       "icon": "fa fa-camera",
       "title": "Entity & Object Detection",
-      "text": "Kamera mendeteksi entitas atau objek seperti manusia atau kendaraan."
+      "text": "The camera detects entities or objects such as humans or vehicles."
     },
     {
       "icon": "fa fa-laptop",
-      "title": "Website live view camera",
-      "text": "Website terjaga yang dapat dibuka untuk melihat sekitar dari kamera di mana saja secara real-time."
+      "title": "Website Live View Camera",
+      "text": "A secure website that can be accessed to view the surroundings from the camera anywhere in real time."
     },
     {
       "icon": "fa fa-wifi",
       "title": "Signal Communication Transferring",
-      "text": "Kamera akan memberikan sinyal komunikasi yang dapat memberikan peringatan ke kereta apabila ada bahaya, terutama di persimpangan."
+      "text": "The camera will transmit communication signals that can provide warnings to the train in case of danger, especially at intersections."
     },
     {
       "icon": "fa fa-bolt",
       "title": "Rechargeable and Eco-Friendly Power Savings",
-      "text": "Daya kamera bisa diisi secara berkala dan penerapan panel surya dapat mempertahankan kinerja kamera setiap waktu."
+      "text": "The camera power can be recharged periodically, and the use of solar panels helps maintain its performance at all times."
     },
     {
-      "icon": "fa fa-exclamation-triangle ",
+      "icon": "fa fa-exclamation-triangle",
       "title": "Automatic Train Protection",
-      "text": "Menerapkan sistem keselamatan otomatis pada kereta api yang dirancang untuk mencegah kecelakaan akibat human-error seperti meleibihi batas kecepatan."
+      "text": "Implements an automatic safety system on trains designed to prevent accidents caused by human error, such as exceeding speed limits."
     }
   ]
 }
